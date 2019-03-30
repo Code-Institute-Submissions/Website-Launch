@@ -2,7 +2,7 @@
 
 body {
     padding-top: 40px;
-    background-color: white;
+    background-color: transparent;
     background-image: url("/assets/images/background12.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,8 +15,15 @@ body {
     font-family: 'Rubik' sans-serif;
 }
 
+.img-rounded{
+    
+    border-style:solid;
+    border-color:black;
+    border-width:2px;
+}
 
-/*------------navbar----------*/
+
+/*------------navbar and footer----------*/
 
 .navbar-inverse {
     background-color: #000000;
@@ -32,43 +39,69 @@ body {
     font-style: italic;
 }
 
-.navbar-fixed-bottom {
-    color: #ffffff;
-    font-family: 'Rubik', sans-serif;
-    background-color: #000000;
-    border-color: #000000;
-    font-size: large;
-    font-style: italic;
-    text-align: right;
+.container-nav{
+    margin-left: 1.2em;
+    margin-right: 1.2em;
 }
 
-.navbar .navbar-brand {
-    padding-top: 0px;
+.navbar-brand{
+    background-image: url("/assets/images/logo.jpg");
+    width:100px;
+    height:50px;
+    background-position: center;
 }
 
-.navbar .navbar-brand img {
-    height: 50px;
-    display: block;
+.social li{
+    display: inline;
+}
+    
+.social{
+    text-align: center;
 }
 
+.social a{
+    padding: 0.5em;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+}
+
+
+.row foot{
+    background-color: black;
+    text-align: center;
+    font-family: 'Rubik' sans-serif;
+    font-size: 15px;
+    color: white;
+}
 
 /*------------Glyphs----------*/
 
 .listen i {
+    display: block;
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+    height: 100px;
     text-align: center;
-    color: black;
-    font-size: 25px;
-    font-weight: bold;
+    margin-bottom: -2em;
+    margin-top: 1em;
 }
-
 .follow i {
-    text-align:right;
+    display: block;
     color: black;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: bold;
-}
-
-
+    height: 100px;
+    text-align: center;
+    margin-bottom: 2em;
+   }
 
 .watch a i {
     display: block;
@@ -80,21 +113,27 @@ body {
     margin-bottom: .2em;
     margin-top: 1em;
 }
+.social b {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+   }
 
+/*------------texts----------*/
 
-/*------------discography----------*/
-
-.caption h2 {
-    margin-bottom: 0.6em;
+.caption {
+    margin-bottom: 2em;
+    margin-top:1em;
     max-width: 100%;
     display: block;
     height: auto;
-    text-align: center;
-    padding-left: 2px;
-    padding-right: 2px;
+    text-align: justify;
     color: black;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: bold;
+    font-family: 'Rubik' sans-serif;
 }
 
 .caption2 {
@@ -107,19 +146,20 @@ body {
     color: black;
 }
 
-.thumbnail {
+.thumbnail  {
     background-color: transparent;
     font-size: 20px;
     font-style: italic;
     font-weight: bold;
     font-family: 'Rubik' sans-serif;
     text-align: center;
-    margin-bottom: 0.5em;
     border-color: transparent;
     max-width: 100%;
     display: block;
     height: auto;
     border-radius: 10px;
+    color:black;
+    margin-bottom: -2em;
 }
 
 .thumbnail-2 {
@@ -136,45 +176,6 @@ body {
     height: auto;
     border-radius: 10px;
 }
-.album {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-.words5{
-    font-size: 22px;
-    font-style: italic;
-    font-weight: bold;
-    text-align: justify;
-    color: black;
-    padding-left: 2em;
-    padding-right: 2em;
-    display: inline-block;
-  }
-
-.videos {
-    text-align: center;
-    color: #000000;
-    font-family: 'Rubik' sans-serif;
-    font-weight: normal;
-    font-weight: bold;
-    font-style: italic;
-}
-
-.footer {
-    position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    background-color: black;
-    color: white;
-    text-align: center;
-}
 
 .words {
     text-align: justify;
@@ -182,169 +183,36 @@ body {
     font-family: 'Rubik' sans-serif;
     font-weight: bold;
     font-style: italic;
-    font-size: 27px;
-    padding-left: 200px;
-    padding-right: 200px;
-    margin-bottom: 1em;
-    margin-top: 1.5em
+    font-size: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 2em;
+    margin-top: 2em
 }
 
 .words2 {
+    text-align: center;
+    color: black;
+    font-family: 'Rubik' sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 25px;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.words3 {
     text-align: justify;
     color: black;
     font-family: 'Rubik' sans-serif;
     font-weight: bold;
     font-style: italic;
-    font-size: 27px;
-    padding-left: 250px;
-    padding-right: 250px;
-    margin-bottom: 1em;
-    margin-top: 1.5em
-}
-
-.words3 {
-    text-align: center;
-    color: black;
-    font-family: 'Rubik' sans-serif;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 27px;
-    padding-left: 250px;
-    padding-right: 250px;
-    margin-bottom: 1em;
-    margin-top: 1.5em
-}
-
-.words4 {
-    text-align: center;
-    color: black;
-    font-family: 'Rubik' sans-serif;
-    font-weight: normal;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 27px;
-    margin-top: 2em
-}
-
-
-.row-word i {
-    color: black;
-    font-family: 'Rubik' sans-serif;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 35px;
-}
-
-.video-row {
-    text-align: center;
-    color: #000000;
-    font-family: 'Rubik' sans-serif;
-    font-weight: bold;
-    font-style: italic;
-    padding-top: 50px;
-    font-size: 35px;
-}
-
-.band-members {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-.container-stage {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-
-/*------------jumbotrons----------*/
-
-.jumbotron-band {
-    display: block;
-    text-align: center;
-    font-size: 100px;
-    font-weight: bolder;
-    font-style: italic;
-    background-image: url("/assets/images/band members1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    background-attachment: fixed;
-    height: 900px;
-    color: white;
-    margin-bottom: 2em;
-}
-
-.jumbotron-heading {
-    display: block;
-    text-align: center;
-    font-size: 100px;
-    font-weight: bolder;
-    font-style: italic;
-    background-image: url("/assets/images/band members.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    background-attachment: fixed;
-    color: white;
-    margin-bottom: 0.5em;
-    height: 840px;
-}
-
-.jumbotron-videos {
-    display: block;
-    text-align: center;
-    font-size: 100px;
-    font-weight: bolder;
-    font-style: italic;
-    background-image: url("/assets/images/live cover.jpg");
-    height: 900px;
-    color: white;
-    background-size: cover;
-    background-attachment: fixed;
+    font-size: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
     margin-top: 1em;
-    margin-bottom: 1em;
-    background-position: top;
-    background-repeat: no-repeat;
-}
-
-.jumbotron-music {
-    display: block;
-    text-align: center;
-    font-size: 100px;
-    font-weight: bolder;
-    font-style: italic;
-    background-image: url("/assets/images/familiar to millions.jpg");
-    height: 925px;
-    color: white;
-    background-size: cover;
-    background-attachment: fixed;
-    margin-top: 0.25em;
-    margin-bottom: 0.3;
-    background-repeat: no-repeat;
-}
-
-.jumbotron-shows {
-    display: block;
-    margin: 0px auto;
-    text-align: center;
-    font-size: 100px;
-    font-weight: bolder;
-    font-style: italic;
-    background-image: url("/assets/images/LEC.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    background-attachment: fixed;
-    height: 900px;
-    color: white;
-    margin-top: 2em;
-}
-
-
-/*------------gig text----------*/
-
+ }
+ 
 .knebworth-text {
     display: block;
     margin: 0px auto;
@@ -378,19 +246,132 @@ body {
     font-style: italic;
 }
 
+
+/*------------jumbotrons----------*/
+
+.jumbotron-band {
+    display: block;
+    text-align: center;
+    font-size: 85px;
+    font-weight: bolder;
+    font-style: italic;
+    background-image: url("/assets/images/band members1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    height: 920px;
+    color: white;
+    margin-bottom: 2em;
+    max-width: 100%;
+}
+
+.jumbotron-heading {
+    display: block;
+    text-align: center;
+    font-size: 85px;
+    font-weight: bolder;
+    font-style: italic;
+    background-image: url("/assets/images/band members.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    color: white;
+    margin-bottom: 0.5em;
+    height: 920px;
+    background-color: transparent;
+    width: 100%;
+ }
+
+.jumbotron-videos {
+    display: block;
+    text-align: center;
+    font-size: 85px;
+    font-weight: bolder;
+    font-style: italic;
+    background-image: url("/assets/images/live cover.jpg");
+    height: 920px;
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-position: top;
+    background-repeat: no-repeat;
+     max-width: 100%;
+}
+
+.jumbotron-music {
+    display: block;
+    text-align: center;
+    font-size: 85px;
+    font-weight: bolder;
+    font-style: italic;
+    background-image: url("/assets/images/familiar to millions.jpg");
+    height: 920px;
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 0.25em;
+    margin-bottom: 0.3;
+    background-repeat: no-repeat;
+     max-width: 100%;
+}
+
+.jumbotron-shows {
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 85px;
+    font-weight: bolder;
+    font-style: italic;
+    background-image: url("/assets/images/LEC.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    height: 920px;
+    color: white;
+     max-width: 100%;
+     margin-top: 1em;
+     margin-bottom: 1em;
+}
+
+.jumbotron-follow {
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 85px;
+    font-weight: bolder;
+    font-style: italic;
+    background-image: url("/assets/images/contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    height: 920px;
+    color: white;
+    margin-top: .5em;
+    margin-bottom: 1em;
+     max-width: 100%;
+}
+
+
+/*------------band table----------*/
+
 #band {
     font-family: 'Rubik' sans-serif;
     border-collapse: collapse;
     width: 80%;
     margin-bottom: 2em;
     margin-top: 5em;
-    margin-left: auto;
-    margin-right: auto;
     table-layout: fixed;
+    
 }
 
-#band td,
-#band th {
+#band td{
+
     border: 1px transparent;
     padding: 15px;
     color: black;
@@ -428,9 +409,8 @@ body {
     border-collapse: collapse;
     width: 100%;
     margin-bottom: 2em;
-    margin-top: 1em;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 2em;
+   
     table-layout: fixed;
 }
 
@@ -438,21 +418,23 @@ body {
     font-family: 'Rubik' sans-serif;
     border-collapse: collapse;
     width: 100%;
-    margin-bottom: 10em;
-    margin-top: 5em;
     margin-left: auto;
     margin-right: auto;
     table-layout: fixed;
     padding-bottom: 50px;
+    margin-top: 2em;
+    margin-bottom: 6em;
  }
+
+/*------------gigs table----------*/
 
 #gigs td,
 #gigs th {
     border: 1px transparent;
-    padding: 15px;
+    padding: 5px;
     color: black;
     font-family: 'Rubik' sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     font-style: italic;
     text-align: center;
@@ -462,7 +444,7 @@ body {
     background-color: transparent;
     color: black;
     font-family: 'Rubik' sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     font-style: italic;
     text-align: center;
@@ -475,21 +457,93 @@ body {
     background-color: black;
     color: white;
     font-family: 'Rubik' sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bolder;
     font-style: italic;
 }
 
-#gigs {
-    font-family: 'Rubik' sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-    margin-bottom: 20em;
-    margin-top: 5em;
-    margin-left: auto;
-    margin-right: auto;
-    table-layout: fixed;
+/*------------contact form----------*/
+
+.form-group{
+    margin-left: 15%;
+    margin-right: 15%;
+    width:75%;
+  
 }
+
+#contact {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 100px;
+    padding-top: 42px;
+    text-align: center;
+    margin-bottom: 30px;
+    width:75%;
+}
+
+.contact-form {
+    position: relative;
+    top: 6%;
+}
+
+#contact-head {
+    text-align: center;
+    color: black;
+    font-family: 'Rubik' sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 65px;
+    margin-bottom: 1em;
+}
+
+
+
+.form-control{
+    border-style:solid;
+    border-color:black;
+    border-width:1px;
+    text-align: left;
+    color: black;
+    font-family: 'Rubik' sans-serif;
+    font-size: 15px;
+    margin-bottom: 0.5em;
+    margin-top:0.5em;
+     background-color: white;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+.submit {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+.btn-default{
+    font-weight:bold;
+    border-style:solid;
+    border-color:black;
+    border-width:1px;
+    text-align: center;
+    color: white;
+    font-family: 'Rubik' sans-serif;
+    font-size: 15px;
+    background-color:black;
+    position: relative;
+    margin-left: 15%;
+    margin-right: 15%;
+    width:75%;
+    
+
+}
+
+
+    
 
 
 
