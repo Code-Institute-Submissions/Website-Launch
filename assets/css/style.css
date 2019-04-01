@@ -3,7 +3,7 @@
 body {
     padding-top: 40px;
     background-color: transparent;
-    background-image: url(../images/background12.png);
+    background-image: url("../images/background12.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -45,7 +45,7 @@ body {
 }
 
 .navbar-brand{
-    background-image:url(../images/logo.jpg);
+    background-image:url("../images/logo.jpg");
     width:100px;
     height:50px;
     background-position: center;
@@ -255,7 +255,7 @@ body {
     font-size: 85px;
     font-weight: bolder;
     font-style: italic;
-    background-image: url("/assets/images/band members1.jpg");
+    background-image: url("../images/band members1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -272,7 +272,7 @@ body {
     font-size: 85px;
     font-weight: bolder;
     font-style: italic;
-    background-image: url("/assets/images/band members.jpg");
+    background-image: url("../images/band members.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -290,7 +290,7 @@ body {
     font-size: 85px;
     font-weight: bolder;
     font-style: italic;
-    background-image: url("/assets/images/live cover.jpg");
+    background-image: url("../images/live cover.jpg");
     height: 920px;
     color: white;
     background-size: cover;
@@ -308,7 +308,7 @@ body {
     font-size: 85px;
     font-weight: bolder;
     font-style: italic;
-    background-image: url("/assets/images/familiar to millions.jpg");
+    background-image: url("../images/familiar to millions.jpg");
     height: 920px;
     color: white;
     background-size: cover;
@@ -326,7 +326,7 @@ body {
     font-size: 85px;
     font-weight: bolder;
     font-style: italic;
-    background-image: url("/assets/images/LEC.jpg");
+    background-image: url("../images/LEC.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -345,7 +345,7 @@ body {
     font-size: 85px;
     font-weight: bolder;
     font-style: italic;
-    background-image: url("/assets/images/contact.jpg");
+    background-image: url("../images/contact.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
